@@ -1,19 +1,41 @@
-import React, {useState} from 'react';
+import React, {useReducer} from 'react';
 import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 
+const reducer = (state, action) => {
+  // state === { count: number }
+  // action === { type: 'INCREMENT' || 'DECREMENT', payload: 1 }
+
+  switch (action.type) {
+    case 'INCREMENT':
+      return {...state, count: state.count + action.payload};
+
+    case 'DECREMENT':
+      return state.count - action.payload < 0
+        ? state
+        : {...state, count: state.count - action.payload};
+
+    default:
+      return state;
+  }
+};
+
 const Counter = () => {
-  const [counter, setCounter] = useState(0);
+  const [state, dispatch] = useReducer(reducer, {count: 0});
+  const {count} = state;
+
   return (
     <View style={styles.container}>
       <TouchableOpacity
         style={styles.button}
-        onPress={() => setCounter(counter - 1)}>
+        onPress={() => dispatch({type: 'DECREMENT', payload: 1})}>
         <Text style={styles.text}>-</Text>
       </TouchableOpacity>
-      <Text>Counter: {counter}</Text>
+
+      <Text>Counter: {count}</Text>
+
       <TouchableOpacity
         style={styles.button}
-        onPress={() => setCounter(counter + 1)}>
+        onPress={() => dispatch({type: 'INCREMENT', payload: 1})}>
         <Text style={styles.text}>+</Text>
       </TouchableOpacity>
     </View>

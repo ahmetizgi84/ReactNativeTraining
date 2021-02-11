@@ -1,6 +1,6 @@
 # React-Native Alıştırma
 
-- Bu uygulama bir dizi react-native pratiklerini içermektedir.
+- Bu uygulama bir dizi react-native pratiklerini içermektedir. Tanımlamalarda bazı hatalar olabilir.
 
 ## FlatList
 
@@ -43,3 +43,12 @@
 
 - type : Değişiklik yapmak istediğimiz operasyonu tanımlayan String tipindeki değişkendir.
 - payload : Operasyonda değişecek değeri tutan değişkendir.
+
+## TextInput
+
+- TextInput'da kullanılan bazı proplar
+
+```js
+autoCapitalize = 'none';
+autoCorrect = {false};
+```
