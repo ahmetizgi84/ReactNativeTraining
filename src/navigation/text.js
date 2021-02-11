@@ -3,6 +3,7 @@ import {StyleSheet, Text, View, TextInput} from 'react-native';
 
 const text = () => {
   const [txt, setTxt] = useState('');
+
   return (
     <View>
       <TextInput
@@ -15,6 +16,11 @@ const text = () => {
 
       <View style={styles.textContent}>
         <Text>text: {txt}</Text>
+        {txt.length < 5 ? (
+          <Text>Password must be 5 characters</Text>
+        ) : (
+          <Text>🐵</Text>
+        )}
       </View>
     </View>
   );
