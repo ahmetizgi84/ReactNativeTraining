@@ -11,7 +11,7 @@
 - keyExtractor props'unu kullanmak istemezsek, data listesine key: "1" eklememiz gerekir.
   key değeri benzersiz ve String olmalıdır.
 
-  # Button
+## Button
 
-  - Button : En basit haliyle bir butondur ve onPress eventlerini yakalamak için kullanılır.
-  - TouchableOpacity : onPress eventlerini yakalamak için kullanıldığı gibi, custom style ile istenilen büyüklükte, şekilde ve renkte kullanılabilir.
+- Button : En basit haliyle bir butondur ve onPress eventlerini yakalamak için kullanılır.
+- TouchableOpacity : onPress eventlerini yakalamak için kullanıldığı gibi, custom style ile istenilen büyüklükte, şekilde ve renkte kullanılabilir.
