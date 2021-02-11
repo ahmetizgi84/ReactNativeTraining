@@ -52,3 +52,9 @@
 autoCapitalize = 'none';
 autoCorrect = {false};
 ```
+
+## Layout System
+
+- Box Object Model : Bir elementin yüksekliği/genişliği ve çevresindeki boşluktan oluşur.
+- Flex Box : 1'den fazla elementin tek bir parent içinde nasıl konumlandıklarını açıklar.
+- Position : Tek bir elementin parent içinde nerede konumlandığını açıklar.

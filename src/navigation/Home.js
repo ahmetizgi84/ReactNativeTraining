@@ -52,6 +52,13 @@ const Home = ({navigation}) => {
         title="Go to Text Screen Demo"
         onPress={() => navigation.navigate('Text')}
       />
+
+      <View style={{height: 3}}></View>
+
+      <Button
+        title="Go to Box Model Screen Demo"
+        onPress={() => navigation.navigate('Box')}
+      />
     </View>
   );
 };
