@@ -4,6 +4,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 
 import HomeScreen from './Home';
 import ListScreen from './List';
+import ImageScreen from './Image';
 
 const Stack = createStackNavigator();
 
@@ -17,6 +18,7 @@ function App() {
           options={{headerShown: false}}
         />
         <Stack.Screen name="List" component={ListScreen} />
+        <Stack.Screen name="Image" component={ImageScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

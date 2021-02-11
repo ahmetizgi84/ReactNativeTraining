@@ -9,6 +9,13 @@ const Home = ({navigation}) => {
         title="Go to List Demo"
         onPress={() => navigation.navigate('List')}
       />
+
+      <View style={{height: 10}}></View>
+
+      <Button
+        title="Go to Image Demo"
+        onPress={() => navigation.navigate('Image')}
+      />
     </View>
   );
 };
