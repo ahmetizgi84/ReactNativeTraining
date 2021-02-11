@@ -21,3 +21,7 @@
 - Props : Parent komponentden child komponente data geçirmek için kullanılan bir sistemdir.
 - State : Zamanla değişen datayı takip etmek için kullanılan bir sistemdir. Eğer state'de tutulan data değişirse,
   state'in bulunduğu komponent rerender olur.
+
+## Spread Operator
+
+- '...' : dizi olarak bulunan state'in kopyasını almak istediğimizde spread operatörünü kullanırız.

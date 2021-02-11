@@ -24,6 +24,20 @@ const Home = ({navigation}) => {
         title="Go to Counter Demo"
         onPress={() => navigation.navigate('Counter')}
       />
+
+      <View style={{height: 10}}></View>
+
+      <Button
+        title="Go to Color Demo"
+        onPress={() => navigation.navigate('Color')}
+      />
+
+      <View style={{height: 10}}></View>
+
+      <Button
+        title="Go to Square Demo"
+        onPress={() => navigation.navigate('Square')}
+      />
     </View>
   );
 };
