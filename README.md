@@ -25,3 +25,7 @@
 ## Spread Operator
 
 - '...' : dizi olarak bulunan state'in kopyasını almak istediğimizde spread operatörünü kullanırız.
+
+## Reducer
+
+- karmaşık uygulamalarda state yönetimini kolaylaştırmak için kullanılan yapıdır. bkz. Context API, Redux...
