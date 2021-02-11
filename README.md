@@ -29,3 +29,17 @@
 ## Reducer
 
 - karmaşık uygulamalarda state yönetimini kolaylaştırmak için kullanılan yapıdır. bkz. Context API, Redux...
+- Tanımladığım action
+
+```js
+{ colorToChange: 'red', amount: 15 }
+```
+
+- React Komunitesindeki genel tanımlama:
+
+```js
+{ type: 'CHANGE_RED', payload: 15 }
+```
+
+- type : Değişiklik yapmak istediğimiz operasyonu tanımlayan String tipindeki değişkendir.
+- payload : Operasyonda değişecek değeri tutan değişkendir.

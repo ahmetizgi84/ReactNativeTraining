@@ -7,6 +7,7 @@ const INCREMENT_AMOUNT = 15;
 const reducer = (state, action) => {
   // state === { red: number, green: number, blue: number }
   // action === { colorToChange: 'red' || 'green' || 'blue' }
+  // action === { type: 'CHANGE_RED' || 'CHANGE_GREEN' || 'CHANGE_BLUE' }
 
   switch (action.colorToChange) {
     case 'red':
