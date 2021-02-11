@@ -15,3 +15,9 @@
 
 - Button : En basit haliyle bir butondur ve onPress eventlerini yakalamak için kullanılır.
 - TouchableOpacity : onPress eventlerini yakalamak için kullanıldığı gibi, custom style ile istenilen büyüklükte, şekilde ve renkte kullanılabilir.
+
+## Props & State
+
+- Props : Parent komponentden child komponente data geçirmek için kullanılan bir sistemdir.
+- State : Zamanla değişen datayı takip etmek için kullanılan bir sistemdir. Eğer state'de tutulan data değişirse,
+  state'in bulunduğu komponent rerender olur.

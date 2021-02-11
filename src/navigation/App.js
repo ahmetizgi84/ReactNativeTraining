@@ -5,6 +5,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import HomeScreen from './Home';
 import ListScreen from './List';
 import ImageScreen from './Image';
+import CounterScreen from './Counter';
 
 const Stack = createStackNavigator();
 
@@ -19,6 +20,7 @@ function App() {
         />
         <Stack.Screen name="List" component={ListScreen} />
         <Stack.Screen name="Image" component={ImageScreen} />
+        <Stack.Screen name="Counter" component={CounterScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
